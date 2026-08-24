@@ -4,6 +4,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import me from './assets/me.png'
 import './App.css'
+import ArtGallery from './ArtGallery'
 
 function App() {
 
@@ -110,6 +111,10 @@ function App() {
 
       <div className="ticks"></div>
       <section id="spacer"></section>
+
+      <section id="hero">
+        <ArtGallery />
+      </section>
     </>
   )
 }
