@@ -2,32 +2,23 @@ import { useState } from 'react'
 import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
+import me from './assets/me.png'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <section id="center">
         <div className="hero">
-          <img src={heroImg} className="base, rounded-full" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
+             <img src={me} className=" w-50 h-50 rounded-full object-cover" alt="owner's bomb-ass selfie" />
         </div>
         <div>
-          <h1>Get started</h1>
+          <h1>Arturo Andres P. de Silva</h1>
           <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+            Game Developer | Computer Science Graudate | Multimedia Artist
           </p>
         </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
       </section>
 
       <div className="ticks"></div>
@@ -37,8 +28,8 @@ function App() {
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#documentation-icon"></use>
           </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
+          <h2>My Stuff</h2>
+          <p>I guess this is where I showcase my work</p>
           <ul>
             <li>
               <a href="https://vite.dev/" target="_blank">
@@ -58,8 +49,8 @@ function App() {
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#social-icon"></use>
           </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
+          <h2>Dis. Dis Moment.</h2>
+          <p>Contact me never are you crazy</p>
           <ul>
             <li>
               <a href="https://github.com/vitejs/vite" target="_blank">
@@ -111,6 +102,10 @@ function App() {
             </li>
           </ul>
         </div>
+      </section>
+
+      <section id="footer">
+        <p>Work in Progress - Last Updated: {new Date().toLocaleDateString()} </p>
       </section>
 
       <div className="ticks"></div>
