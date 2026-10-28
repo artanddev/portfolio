@@ -24,7 +24,7 @@ function GameDevCard({ data }) {
         <div class="bg-neutral-primary-soft block  m-5 p-6 
         border border-neutral-300 rounded-lg shadow-md text-left" >
             <div>
-                <img src={data.images?.[0]} class="rounded-lg" />
+                <img src={data.images?.[0]} class="rounded-lg m-auto" />
             </div>
             <h5 class="mt-6 text-2xl font-semibold tracking-tight text-heading"> {data.title} </h5>
             <div class="flex flex-wrap gap-2 mb-4">
