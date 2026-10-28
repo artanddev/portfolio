@@ -5,7 +5,7 @@ const categories = ["Game Development", "Illustrations", "Web and App Developmen
 const PortfolioOptions = () => {
   return (
     <section id="categories">
-      <ul className="flex flex-wrap flex-col sm:flex-row gap-2 justify-center">
+      <ul className="flex flex-wrap flex-col md:flex-row gap-2 justify-center">
         {categories.map((category) => (
           <li key={category}>
             <NavLink
