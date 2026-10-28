@@ -1,17 +1,25 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-const catagories = ["Game Development", "Illustrations"];
+const categories = ["Game Development", "Illustrations", "Web and App Development"];
 
 const PortfolioOptions = () => {
-
   return (
-    <section id="catagories">
-      <ul className="flex flex-wrap gap-2 justify-center">
-        {catagories.map((category, index) => (
-          <li key={index}>
-            <Link to={category.toLowerCase().replace(/\s+/g, "-")}>
-              <button class="bg-gray-100 hover:bg-gray-200 font-bold py-2 px-4 rounded"> {category} </button>
-            </Link>
+    <section id="categories">
+      <ul className="flex flex-wrap flex-col sm:flex-row gap-2 justify-center">
+        {categories.map((category) => (
+          <li key={category}>
+            <NavLink
+              to={category.toLowerCase().replace(/\s+/g, "-")}
+              className={({ isActive }) =>
+                `inline-flex items-center text-2xl font-bold py-2 px-4 rounded
+                  ${isActive
+                    ? "bg-red-500 text-white hover:bg-red-700"
+                    : "bg-gray-100 hover:bg-gray-200"
+                  }`
+              }
+            >
+              {category}
+            </NavLink>
           </li>
         ))}
       </ul>
