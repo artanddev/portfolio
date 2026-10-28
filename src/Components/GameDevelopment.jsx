@@ -2,23 +2,29 @@ import GameDevData from './GameDevData.jsx'
 
 export default function GameDevelopment() {
     return (
-        <div className="flex flex-row flex-wrap justify-center-safe">
-            <GameDevCard data={GameDevData[0]} />
-            <GameDevCard data={GameDevData[1]} />
-            <GameDevCard data={GameDevData[2]} />
-            <GameDevCard data={GameDevData[3]} />
-            <GameDevCard data={GameDevData[4]} />
-            <GameDevCard data={GameDevData[5]} />
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 justify-center-safe">
+            {/* Column 1 */}
+            <div class="grid content-start gap-3">
+                <GameDevCard data={GameDevData[0]} />
+                <GameDevCard data={GameDevData[1]} />
+                <GameDevCard data={GameDevData[2]} />
+            </div>
+            {/*Column 2 */}
+            <div class="grid content-start gap-3">
+                <GameDevCard data={GameDevData[5]} />
+                <GameDevCard data={GameDevData[4]} />
+                <GameDevCard data={GameDevData[3]} />
+            </div>
         </div>
     )
 }
 
-function GameDevCard({data}) {
+function GameDevCard({ data }) {
     return (
-        <div class="bg-neutral-primary-soft block max-w-md m-5 p-6 
+        <div class="bg-neutral-primary-soft block  m-5 p-6 
         border border-neutral-300 rounded-lg shadow-md text-left" >
             <div>
-                <img src={data.images?.[0]}  class="rounded-lg" />
+                <img src={data.images?.[0]} class="rounded-lg" />
             </div>
             <h5 class="mt-6 text-2xl font-semibold tracking-tight text-heading"> {data.title} </h5>
             <div class="flex flex-wrap gap-2 mb-4">
@@ -32,14 +38,14 @@ function GameDevCard({data}) {
                 <p class="text-body whitespace-pre-wrap text-justify">&#9;{data.description}</p>
             </div>
             <div class=" mt-4">
-            <p class="text-lg"> Contributed to: </p>
+                <p class="text-lg"> Contributed to: </p>
                 <ul class="ml-6 list-disc">
                     {data.contrib.map((c, i) =>
-                        (
-                            <li key={i}>
-                                <p>{c}</p>
-                            </li>
-                        ))
+                    (
+                        <li key={i}>
+                            <p>{c}</p>
+                        </li>
+                    ))
                     }
                 </ul>
             </div>

@@ -3,7 +3,13 @@ export default function Footer() {
         <>
             <section id="spacer" />
             <section id="footer">
-                <p>Life is a work in progress - Last Updated: {new Date().toLocaleDateString()} </p>
+                <p>Built with 
+                    <a href= "https://react.dev/"> React.js,</a> 
+                    <a href="https://tailwindcss.com/"> Tailwind, </a> & 
+                    <a href="https://github.com/"> Github!</a>
+                </p>
+                <p>© 2026 Arturo Andres P. de Silva | All rights reserved  </p>
+                <p>Life is a work in progress — Last Updated: {BUILD_DATE} </p>
             </section>
         </>
     )
