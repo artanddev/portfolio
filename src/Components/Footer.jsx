@@ -9,7 +9,8 @@ export default function Footer() {
                     <a href="https://github.com/"> Github!</a>
                 </p>
                 <p>© 2026 Arturo Andres P. de Silva | All rights reserved  </p>
-                <p>Life is a work in progress — Last Updated: {BUILD_DATE} </p>
+                {/* <p>Life is a work in progress — Last Updated: {BUILD_DATE} </p> */}
+                <p>Life is a work in progress — Last Updated: 28/10/26 </p>
             </section>
         </>
     )
