@@ -1,8 +1,11 @@
 import GameDevData from './GameDevData.jsx'
+import { ImageSlider } from './ImageSlider.jsx'
 
 export default function GameDevelopment() {
     return (
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 justify-center-safe">
+
+
             {/* Column 1 */}
             <div class="grid content-start gap-3">
                 <GameDevCard data={GameDevData[0]} />
@@ -23,9 +26,7 @@ function GameDevCard({ data }) {
     return (
         <div class="bg-neutral-primary-soft block  m-5 p-6 
         border border-neutral-300 rounded-lg shadow-md text-left" >
-            <div>
-                <img src={data.images?.[0]} class="rounded-lg m-auto" />
-            </div>
+             <ImageSlider imageUrls={data.images}/>
             <h5 class="mt-6 text-2xl font-semibold tracking-tight text-heading"> {data.title} </h5>
             <div class="flex flex-wrap gap-2 mb-4">
                 {data.tags.map((tag, index) => (
