@@ -57,28 +57,31 @@ const disColoredImg = [disColored1, disColored2, disColored3, disColored4, disCo
 const GameDevData = [
     {
         title: "Lomi Dash",
-        description: "A casual game about Batangueno culture through a fast-paced cooking gameplay. Inspired by other ", 
-        tags: ["Unity", "C#", "2.5D", "Thesis"],
-        link: "https://linhuuss.itch.io/lomi-dash",
-        contrib: ["I Did That"],
+        description: "A casual game about Batangueno culture through a fast-paced cooking gameplay. Inspired by other. Won 2nd Best Thesis Award 2026.", 
+        tags: ["Unity", "C#", "2.5D", "Android", "Isometric", "Cooking Game", "Cultural", "Thesis"],
+        link: "https://drive.google.com/file/d/1TwCK016K6-ojexHnA29HAeuhX6kniMeD/view?usp=sharing",
+        contrib: ["Led a 3-man group project from planning, ideation, production, testing and release", 
+            "Architected and implemented full-stack features in Unity (C#) and Firebase supporting ~20 concurrent users with real-time data synchronization",
+            "Implemented Hierarchical Task Networks (HTN) and Procedural Content Generation (PCG) to model gameplay features as modular, reusable components."
+        ],
         images: lomiDashImg,
     },
 
     {
         title: "Dead Elev",
         description: "A Horror Detective Game",
-        tags: ["Unity", "C#", "Point-and-Click"],
+        tags: ["Construct", "Horror", "Visual Novel", "Point-and-Click"],
         link: null,
-        contrib: ["Graphical Assets, including background, UI, and Character Sprites", "Sound Design"],
+        contrib: ["Created Graphical Assets, including background, UI, and Character Sprites", "Directed Sound Design"],
         images: deadElevImg,
     },
 
     {
         title: "Heroes vs Titans",
-        description: "A Horror Detective Game",
-        tags: ["Unity", "C#", "2D", "Tech Demo", "Auto-Play", "Incremental"],
-        link: "https://linhuuss.itch.io/lomi-dash",
-        contrib: ["Graphical Assets, including background, UI, and Character Sprites", "Sound Design"],
+        description: "An Incremental Idle Game. Created as a tech demo for Animation systems, UI screen and functionalities, and gacha mechanics",
+        tags: ["Unity", "C#", "2D", "Tech Demo", "Idle", "Incremental", "Solo Jam"],
+        link: null,
+        contrib: ["practiced modular systems",  "A character unit upgrade system", " A functional and customizable party system", "A gacha/lootbox/lottery system", "A constantly updating incremental damage system", "endless idle gameplay", "Designed UI elements based on Unity's native UI properties"],
         images: HvTImg,
     },
 
@@ -94,7 +97,7 @@ const GameDevData = [
     {
         title: "The Bear",
         description: "A Horror Detective Game",
-        tags: ["Unity", "C#"],
+        tags: ["Unity", "C#", "Solo Jam"],
         link: null,
         contrib: ["Graphical Assets, including background, UI, and Character Sprites", "Sound Design"],
         images: theBearImg,
@@ -103,7 +106,7 @@ const GameDevData = [
     {
         title: "Discolored",
         description: "A Horror Detective Game",
-        tags: ["Unity", "C#", "3D"],
+        tags: ["Unity", "C#", "3D", "Sikaptala Game Jam"],
         link: null,
         contrib: ["Coding"],
         images: disColoredImg,
