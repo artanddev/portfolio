@@ -15,6 +15,7 @@ function MasonGallery({onChangeBigImage, images, title}) {
                                     src={image}
                                     alt={`PubMat artwork ${columnIndex + 1}-${imageIndex + 1}`}
                                     onClick={() => onChangeBigImage(image)}
+                                    loading="lazy"
                                 />
                             </div>
                         ))}
