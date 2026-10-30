@@ -3,7 +3,7 @@ import Contacts from './Components/Contacts'
 import Profile from './Components/Profile'
 import Footer from './Components/Footer'
 
-import { createHashRouter, RouterProvider, Outlet, Navigate } from 'react-router-dom'
+import { createHashRouter, createBrowserRouter, RouterProvider, Outlet, Navigate } from 'react-router-dom'
 import GameDevelopment from './Components/GameDevelopment.jsx'
 import NotFoundPage from './Components/NotFoundPage.jsx'
 import PortfolioOptions from './Components/PortfolioOptions.jsx'
@@ -11,7 +11,7 @@ import Illustrations from './Components/Illustrations.jsx'
 import TwoDAssetWork from './Components/TwoDAssetWork.jsx'
 import ScrollToAnchor from './Components/ScrollToAnchor.jsx'
 
-const router = createHashRouter(
+const router = createBrowserRouter(
   [
     {
       element: <HomeLayout />,
@@ -24,14 +24,13 @@ const router = createHashRouter(
       ],
     },
     { path: "login", element: null }
-  ]
-);
+  ], {basename: "/portfolio/"});
 
 function App() {
 
   return (
     <>
-      <RouterProvider router={router} />
+      <RouterProvider router={router}/>
     </>
   )
 }

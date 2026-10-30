@@ -11,7 +11,7 @@ export default defineConfig({
     tailwindcss(),
   ],
   base: '/portfolio/',
-  // define : {
-  //   BUILD_DATE : JSON.stringify(new Date().toISOString().substring(0, 10))
-  // }
+  define : {
+    BUILD_DATE : JSON.stringify(new Date().toISOString().substring(0, 10))
+  }
 })
