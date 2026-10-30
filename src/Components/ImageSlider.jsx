@@ -21,7 +21,7 @@ export function ImageSlider({ imageUrls }) {
     }
     return (
         <div class="relative">
-            <img src={imageUrls[imageIndex]} className="rounded-lg m-auto" />
+            <img src={imageUrls[imageIndex]} className="rounded-lg m-auto" loading="lazy"/>
             <button class="block absolute top-0 bottom-0 left-0 cursor-pointer p-[1rem]  hover:bg-neutral-100/70 rounded-ss-lg duration-200"
                 onClick={()=> showPrevImage()} >
                 <ArrowBigLeft class="fill-black stroke-white size-10" />
