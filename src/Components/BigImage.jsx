@@ -11,7 +11,7 @@ export default function BigImage({ imageSrc, altText, onClose }) {
         <>
             <div
                 id="image-overlay"
-                className="fixed inset-0 z-10 flex items-center justify-center bg-neutral-700/80 p-4"
+                className="fixed inset-0 z-10 flex items-center justify-center bg-neutral-700/90 p-4"
                 onClick={(event) => onClose(event.target.id)}
             >
                 <div
@@ -22,7 +22,7 @@ export default function BigImage({ imageSrc, altText, onClose }) {
                     <button
                         id="image-close-button"
                         type="button"
-                        className="absolute right-2 top-0 z-20 text-3xl leading-none hover:text-gray-700 focus:outline-none focus:text-gray-700"
+                        className="absolute -right-10 -top-4 z-20 text-3xl leading-none hover:text-neutral-300 focus:outline-none text-gray-50 hidden md:inline"
                         onClick={(event) => onClose(event.target.id)}
                         aria-label="Close image"
                     >

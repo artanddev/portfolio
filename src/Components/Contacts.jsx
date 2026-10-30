@@ -15,7 +15,7 @@ function Contacts() {
                 {socials.map((social, index) => (
                     <li key={index} class="m-2">
                         <a href={social.url} target="_blank" rel="noopener noreferrer">
-                            <img src={social.icon} alt={social.name} class="h-10 lg:h-8" />
+                            <img src={social.icon} alt={social.name} class="h-10 lg:h-8 motion-safe:hover:scale-105 transition duration-100 ease-in-out" />
                         </a>
                     </li>
                 ))}
