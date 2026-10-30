@@ -1,10 +1,9 @@
-import { useState } from 'react'
 import './App.css'
 import Contacts from './Components/Contacts'
 import Profile from './Components/Profile'
 import Footer from './Components/Footer'
 
-import { createBrowserRouter, RouterProvider, Outlet, Navigate } from 'react-router-dom'
+import { createHashRouter, RouterProvider, Outlet, Navigate } from 'react-router-dom'
 import GameDevelopment from './Components/GameDevelopment.jsx'
 import NotFoundPage from './Components/NotFoundPage.jsx'
 import PortfolioOptions from './Components/PortfolioOptions.jsx'
@@ -12,7 +11,7 @@ import Illustrations from './Components/Illustrations.jsx'
 import TwoDAssetWork from './Components/TwoDAssetWork.jsx'
 import ScrollToAnchor from './Components/ScrollToAnchor.jsx'
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   [
     {
       element: <HomeLayout />,
@@ -25,8 +24,7 @@ const router = createBrowserRouter(
       ],
     },
     { path: "login", element: null }
-  ],
-  { basename: '/portfolio/' }
+  ]
 );
 
 function App() {
