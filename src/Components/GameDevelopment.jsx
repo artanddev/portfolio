@@ -1,11 +1,25 @@
 import GameDevData from './GameDevData.jsx'
 import { ImageSlider } from './ImageSlider.jsx'
+import RelevantSkills from './RelevantSkills.jsx'
+import resume from '../Assets/resume/De Silva Resume.pdf'
 
+const skills = [
+    "Unity",
+    "Godot",
+    "Firebase",
+    "#C",
+    "2D",
+    "3D",
+    "UI",
+    "Asset Design",
+    "Git/Github"
+]
 export default function GameDevelopment() {
     return (
+        <>
+        <RelevantSkills skills={skills} resume={resume}/>
+        {/* <h1 className=" font-bold text-left"> Games </h1> */}
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 justify-center-safe">
-
-
             {/* Column 1 */}
             <div class="grid content-start gap-3">
                 <GameDevCard data={GameDevData[0]} />
@@ -19,11 +33,14 @@ export default function GameDevelopment() {
                 <GameDevCard data={GameDevData[3]} />
             </div>
         </div>
+        </>
     )
 }
 
 function GameDevCard({ data }) {
     return (
+
+        
         <div class="bg-neutral-primary-soft block  m-5 p-6 
         border border-neutral-300 rounded-lg shadow-md text-left" >
              <ImageSlider imageUrls={data.images}/>

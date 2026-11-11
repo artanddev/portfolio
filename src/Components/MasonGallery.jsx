@@ -5,10 +5,8 @@ function MasonGallery({images, title }) {
 
     const [isImageOpen, setIsImageOpen] = useState(false)
     const [bigImageSrc, setBigImageSrc] = useState(null)
-    const handleImageClose = (clickedId) => {
-        if (['image-overlay', 'image-container', 'image-close-button'].includes(clickedId)) {
+    const handleImageClose = () => {
             setIsImageOpen(false)
-        }
     }
     const handleBigImageChange = (imageSrc) => {
         setBigImageSrc(imageSrc)
@@ -25,8 +23,8 @@ function MasonGallery({images, title }) {
                 />
             )}
 
-            <div className="m-10 text-left">
-                <h1 className="text-3xl font-bold text-left"> {title} </h1>
+            <div className="text-left">
+                <h2 className="text-3xl font-bold text-left"> {title} </h2>
 
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-3 justify-items-center-safe">
                     {images.map((column, columnIndex) => (

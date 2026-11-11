@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <>
-            <section id="footer" class="mb-4">
+            <section id="footer" class="mb-4 mt-20">
                 <div class="text-sm text-neutral-400">
                     <p>Built with&nbsp;
                         <a href="https://react.dev/" class="underline">React.js</a>

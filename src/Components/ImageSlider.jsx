@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { ArrowBigLeft, ArrowBigRight } from "lucide-react"
+import {ChevronLeft, ChevronRight } from "lucide-react"
 
 export function ImageSlider({ imageUrls }) {
     const [imageIndex, setImageIndex] = useState(0)
@@ -22,13 +22,14 @@ export function ImageSlider({ imageUrls }) {
     return (
         <div class="relative">
             <img src={imageUrls[imageIndex]} className="rounded-lg m-auto" loading="lazy"/>
-            <button class="block absolute top-0 bottom-0 left-0 cursor-pointer p-[1rem]  hover:bg-neutral-100/70 rounded-ss-lg duration-200"
+            <button class="block absolute top-0 bottom-0 left-0 cursor-pointer p-[1rem]  
+            hover:bg-gradient-to-r from-slate-50 to-slate-50/0"
                 onClick={()=> showPrevImage()} >
-                <ArrowBigLeft class="fill-black stroke-white size-10" />
+                <ChevronLeft class="stroke-black size-10" />
             </button>
-            <button class="block absolute top-0 bottom-0 cursor-pointer p-[1rem] right-0 hover:bg-neutral-100/70 rounded-ss-lg duration-200"
+            <button class="block absolute top-0 bottom-0 cursor-pointer p-[1rem] right-0 hover:bg-gradient-to-l from-slate-50 to-slate-50/0"
                 onClick={() => showNextImage()}>
-                <ArrowBigRight class="fill-black stroke-white size-10" />
+                <ChevronRight class="stroke-black size-10" />
             </button>
         </div>
     )

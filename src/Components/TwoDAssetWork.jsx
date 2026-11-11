@@ -1,5 +1,16 @@
 import MasonGallery from "./MasonGallery"
+import RelevantSkills from "./RelevantSkills"
+import resume from "../Assets/resume/De Silva Resume.pdf"
 
+const skills = [
+    "Clip Studio Paint",
+    "Photoshop",
+    "Character Design",
+    "Icons",
+    "Sprites",
+    "Backgrounds",
+    "Illustrations"
+]
 {/*IMG Import */}
 import icon1 from "../Assets/images/2D Asset Work/Sprite Icon Work/1.webp"
 import icon2 from "../Assets/images/2D Asset Work/Sprite Icon Work/2.webp"
@@ -35,6 +46,7 @@ function TwoDAssetWork()
 {
     return (
         <>
+        <RelevantSkills skills={skills} resume={resume}/>
         <MasonGallery images={spriteIMG} title="Sprite Icons"/>
         <MasonGallery images={charIMG} title="Sprite Characters"/>
         <MasonGallery images={bgIMG} title="Background and CG"/>

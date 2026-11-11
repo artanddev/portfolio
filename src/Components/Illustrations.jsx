@@ -1,4 +1,14 @@
 import MasonGallery from './MasonGallery.jsx'
+import RelevantSkills from './RelevantSkills.jsx'
+import resume from '../Assets/resume/De Silva Resume.pdf'
+
+const skills = [
+    "Clip Studio Paint",
+    "Photoshop",
+    "Backgrounds",
+    "Posters",
+    "Animated",
+]
 
 /*IMG Imports */
 import img1 from '../assets/images/Illustrations/Pubmat Illustrations/1.webp'
@@ -27,6 +37,7 @@ const orgGraph = [
 function Illustrations() {
     return (
             <section id="hero">
+                 <RelevantSkills skills={skills} resume={resume}/>
                 <MasonGallery images={orgIllust} title="Pubmat (Illustration)"/>
                 <MasonGallery images={orgGraph} title="PubMat (Graphics)"/>
             </section>
