@@ -28,7 +28,7 @@ import HvT2 from '../Assets/images/GameDev/HeroesVsTitans/2.webp'
 import HvT3 from '../Assets/images/GameDev/HeroesVsTitans/3.webp'
 import HvT4 from '../Assets/images/GameDev/HeroesVsTitans/4.webp'
 
-const HvTImg = [ HvT1, HvT2, HvT3, HvT4]
+const HvTImg = [ HvT1, HvT2, HvT3, HvT4, HvT1]
 
 import IoL1 from '../Assets/images/GameDev/Island of the Lost/1.webp'
 import IoL2 from '../Assets/images/GameDev/Island of the Lost/2.webp'
@@ -44,7 +44,7 @@ import theBear2 from '../Assets/images/GameDev/The Bear/2.webp'
 import theBear3 from '../Assets/images/GameDev/The Bear/3.webp'
 import theBear4 from '../Assets/images/GameDev/The Bear/4.webp'
 
-const theBearImg = [theBear1, theBear2, theBear3, theBear4]
+const theBearImg = [theBear1, theBear2, theBear3, theBear4, theBear1]
 
 import disColored1 from '../Assets/images/GameDev/Discolored/1.webp'
 import disColored2 from '../Assets/images/GameDev/Discolored/2.webp'
@@ -52,7 +52,7 @@ import disColored3 from '../Assets/images/GameDev/Discolored/3.webp'
 import disColored4 from '../Assets/images/GameDev/Discolored/4.webp'
 import disColored5 from '../Assets/images/GameDev/Discolored/5.webp'
 
-const disColoredImg = [disColored1, disColored2, disColored3, disColored4, disColored5]
+const disColoredImg = [disColored1, disColored2, disColored3, disColored4, disColored5, disColored1]
 
 const GameDevData = [
     {
