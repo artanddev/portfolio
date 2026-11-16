@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-const categories = ["Game Development", "2D Asset Work", "Illustrations", "Web and App Development"];
+const categories = ["Game Development", "2D Asset Work", "Illustrations"];
 
 const PortfolioOptions = () => {
   return (
